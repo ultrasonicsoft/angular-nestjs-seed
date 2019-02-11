@@ -1,0 +1,11 @@
+<h2>Employee List</h2>
+
+<div>
+  <input type="text" [(ngModel)]="userName">
+  <button (click)="addEmployee()">Add Employee</button>
+</div>
+<div>
+  <li *ngFor="let employee of allEmployees">
+    {{employee.name}}
+  </li>
+</div>
